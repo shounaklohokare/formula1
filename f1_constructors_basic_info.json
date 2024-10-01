@@ -1,0 +1,42 @@
+[
+    {
+        "team_name": "Red Bull Racing",
+        "base": "Milton Keynes, United Kingdom"
+    },
+    {
+        "team_name": "Mercedes-AMG Petronas",
+        "base": "Brackley, United Kingdom"
+    },
+    {
+        "team_name": "Ferrari",
+        "base": "Maranello, Italy"
+    },
+    {
+        "team_name": "McLaren",
+        "base": "Woking, United Kingdom"
+    },
+    {
+        "team_name": "Aston Martin",
+        "base": "Silverstone, United Kingdom"
+    },
+    {
+        "team_name": "Alpine",
+        "base": "Enstone, United Kingdom"
+    },
+    {
+        "team_name": "Williams",
+        "base": "Grove, United Kingdom"
+    },
+    {
+        "team_name": "Kick Sauber",
+        "base": "Hinwil, Switzerland"
+    },
+    {
+        "team_name": "Haas",
+        "base": "Kannapolis, United States"
+    },
+    {
+        "team_name": "RB Honda RBPT",
+        "base": "Faenza, Italy"
+    }
+]

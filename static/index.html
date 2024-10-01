@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<title>Formula 1</title>
+<style>
+    *::after,
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .bg-custom-red {
+        background-color: #FF4D4D;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="flex justify-center items-center absolute top-0 w-full h-24 bg-custom-red">
+        <div class="text-6xl text-gray-900 font-mono">Formula 1</div>
+    </div>
+    <div class="mt-32 flex justify-center items-center flex-col">
+        <h1 class="text-4xl font-semibold">
+            Constructors
+        </h1>
+        <div class="pt-6 text-xl">
+            <table
+                class="text-gray-800 rounded-md border  md:border-2 divide-y-[0.225rem] divide-gray-600   mx-auto mb-1 md:mb-[4rem] border-gray-600 border-separate">
+                <thead>
+                    <tr>
+                        <th>Constructor</th>
+                        <th>Base</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center divide-y divide-gray-400 font-semibold">
+                    {{range $_, $contructor := .}}
+                    <tr class="mx-16 p-2">
+                        <td class="mx-12 p-4"><a href="/{{$contructor.Name}}">{{$contructor.Name}}</a></td>
+                        <td class="mx-12 p-4"><a href="/{{$contructor.Name}}">{{$contructor.Base}}</a></td>
+                    </tr>
+                    {{end}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
