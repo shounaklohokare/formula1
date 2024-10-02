@@ -1,0 +1,314 @@
+[
+    {
+        "team_name": "Red Bull Racing",
+        "details": {
+            "base": "Milton Keynes, United Kingdom",
+            "team_principal": "Christian Horner",
+            "technical_chief": "Pierre Waché",
+            "chasis": "W15",
+            "engine_supplier": "Honda",
+            "world_championships": "6",
+            "wins": "120",
+            "pole_positions": "105",
+            "fastest_laps": "98",
+            "drivers": [
+                {
+                    "name": "Max Verstrappen",
+                    "number": "1"
+                },
+                {
+                    "name": "Sergio Perez",
+                    "number": "11"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Mercedes-AMG Petronas",
+        "details": {
+            "base": "Brackley, United Kingdom",
+            "team_principal": "Toto Wolff",
+            "technical_chief": "James Allison",
+            "chasis": "RB20",
+            "engine_supplier": "Mercedes",
+            "world_championships": "8",
+            "wins": "119",
+            "pole_positions": "131",
+            "fastest_laps": "100",
+            "drivers": [
+                {
+                    "name": "Lewis Hamilton",
+                    "number": "44"
+                },
+                {
+                    "name": "George Russell",
+                    "number": "63"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Ferrari",
+        "details": {
+            "base": "Maranello, Italy",
+            "team_principal": "Frédéric Vasseur",
+            "technical_chief": "Enrico Gualtieri",
+            "chasis": "SF-24",
+            "engine_supplier": "Ferrari",
+            "world_championships": "16",
+            "wins": "247",
+            "pole_positions": "252",
+            "fastest_laps": "262",
+            "drivers": [
+                {
+                    "name": "Charles Leclerc",
+                    "number": "16"
+                },
+                {
+                    "name": "Carlos Sainz",
+                    "number": "55"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "McLaren",
+        "details": {
+            "base": "Woking, United Kingdom",
+            "team_principal": "Andrea Stella",
+            "technical_chief": "Peter Prodromou / Neil Houldey",
+            "chasis": "MCL38",
+            "engine_supplier": "Mercedes",
+            "world_championships": "8",
+            "wins": "188",
+            "pole_positions": "162",
+            "fastest_laps": "170",
+            "drivers": [
+                {
+                    "name": "Lando Norris",
+                    "number": "4"
+                },
+                {
+                    "name": "Oscar Piastri",
+                    "number": "81"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Aston Martin",
+        "details": {
+            "base": "Silverstone, United Kingdom",
+            "team_principal": "Mike Krack",
+            "technical_chief": "Dan Fallows",
+            "chasis": "AMR24",
+            "engine_supplier": "Mercedes",
+            "world_championships": "0",
+            "wins": "1",
+            "pole_positions": "1",
+            "fastest_laps": "3",
+            "drivers": [
+                {
+                    "name": "Fernando Alonso",
+                    "number": "14"
+                },
+                {
+                    "name": "Lance Stroll",
+                    "number": "18"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Aston Martin",
+        "details": {
+            "base": "Enstone, United Kingdom",
+            "team_principal": "Bruno Famin",
+            "technical_chief": "David Sanchez",
+            "chasis": "A524",
+            "engine_supplier": "Renault",
+            "world_championships": "2",
+            "wins": "21",
+            "pole_positions": "20",
+            "fastest_laps": "15",
+            "drivers": [
+                {
+                    "name": "Esteban Ocon",
+                    "number": "31"
+                },
+                {
+                    "name": "Pierre Gasly",
+                    "number": "10"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Alpine",
+        "details": {
+            "base": "Enstone, United Kingdom",
+            "team_principal": "Bruno Famin",
+            "technical_chief": "David Sanchez",
+            "chasis": "A524",
+            "engine_supplier": "Renault",
+            "world_championships": "2",
+            "wins": "21",
+            "pole_positions": "20",
+            "fastest_laps": "15",
+            "drivers": [
+                {
+                    "name": "Esteban Ocon",
+                    "number": "31"
+                },
+                {
+                    "name": "Pierre Gasly",
+                    "number": "10"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Alpine",
+        "details": {
+            "base": "Enstone, United Kingdom",
+            "team_principal": "Bruno Famin",
+            "technical_chief": "David Sanchez",
+            "chasis": "A524",
+            "engine_supplier": "Renault",
+            "world_championships": "2",
+            "wins": "21",
+            "pole_positions": "20",
+            "fastest_laps": "15",
+            "drivers": [
+                {
+                    "name": "Esteban Ocon",
+                    "number": "31"
+                },
+                {
+                    "name": "Pierre Gasly",
+                    "number": "10"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Williams",
+        "details": {
+            "base": "Grove, United Kingdom",
+            "team_principal": "James Vowles",
+            "technical_chief": "Pat Fry",
+            "chasis": "FW46",
+            "engine_supplier": "Mercedes",
+            "world_championships": "9",
+            "wins": "114",
+            "pole_positions": "128",
+            "fastest_laps": "133",
+            "drivers": [
+                {
+                    "name": "Alex Albon",
+                    "number": "23"
+                },
+                {
+                    "name": "Franco Colapinto",
+                    "number": "43"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Kick Sauber",
+        "details": {
+            "base": "Hinwil, Switzerland",
+            "team_principal": "Alessandro Alunni Bravi",
+            "technical_chief": "James Key",
+            "chasis": "C44",
+            "engine_supplier": "Ferrari",
+            "world_championships": "0",
+            "wins": "1",
+            "pole_positions": "1",
+            "fastest_laps": "7",
+            "drivers": [
+                {
+                    "name": "Valterri Bottas",
+                    "number": "77"
+                },
+                {
+                    "name": "Guanyu Zhou",
+                    "number": "24"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Kick Sauber",
+        "details": {
+            "base": "Hinwil, Switzerland",
+            "team_principal": "Alessandro Alunni Bravi",
+            "technical_chief": "James Key",
+            "chasis": "C44",
+            "engine_supplier": "Ferrari",
+            "world_championships": "0",
+            "wins": "1",
+            "pole_positions": "1",
+            "fastest_laps": "7",
+            "drivers": [
+                {
+                    "name": "Valterri Bottas",
+                    "number": "77"
+                },
+                {
+                    "name": "Guanyu Zhou",
+                    "number": "24"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "Haas",
+        "details": {
+            "base": "Kannapolis, United States",
+            "team_principal": "Ayao Komatsu",
+            "technical_chief": "Andrea De Zordo",
+            "chasis": "VF-24",
+            "engine_supplier": "Ferrari",
+            "world_championships": "0",
+            "wins": "0",
+            "pole_positions": "1",
+            "fastest_laps": "2",
+            "drivers": [
+                {
+                    "name": "Kevin Magnussen",
+                    "number": "77"
+                },
+                {
+                    "name": "Nico Hülkenberg",
+                    "number": "24"
+                }
+            ]
+        }
+    },
+    {
+        "team_name": "RB Honda RBPT",
+        "details": {
+            "base": "Faenza, Italy",
+            "team_principal": "Franz Tost",
+            "technical_chief": "Jody Egginton",
+            "chasis": "VCARB 01",
+            "engine_supplier": "Honda",
+            "world_championships": "0",
+            "wins": "2",
+            "pole_positions": 1,
+            "fastest_laps": "4",
+            "drivers": [
+                {
+                    "name": "Daniel Ricciardo",
+                    "number": "3"
+                },
+                {
+                    "name": "Yuki Tsunoda",
+                    "number": "22"
+                }
+            ]
+        }
+    }
+]

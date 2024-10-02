@@ -14,7 +14,30 @@ type Constructor struct {
 	Base string `json:"base"`
 }
 
+type ConstructorDetails struct {
+	Base               string `json:"base"`
+	TeamPrincipal      string `json:"team_principal"`
+	TechnicalChief     string `json:"technical_chief"`
+	Chasis             string `json:"chasis"`
+	EngineSupplier     string `json:"engine_supplier"`
+	WorldChampionships string `json:"world_championships"`
+	Wins               string `json:"wins"`
+	PolePositions      string `json:"pole_positions"`
+	FastestLaps        string `json:"fastest_laps"`
+	Drivers            []struct {
+		Name   string `json:"name"`
+		Number string `json:"number"`
+	} `json:"drivers"`
+}
+
 type Constructors []Constructor
+
+type ConstructorDetailsWrapper struct {
+	TeamName           string             `json:"team_name"`
+	ConstructorDetails ConstructorDetails `json:"details"`
+}
+
+type ConstructorDetailsWrapperArray []ConstructorDetailsWrapper
 
 func main() {
 
@@ -28,8 +51,12 @@ func main() {
 		return
 	}
 
+	var cwa ConstructorDetailsWrapperArray
+
+	parseFile2(&cwa)
+
 	http.HandleFunc("/", constructors.handler)
-	http.HandleFunc("/{constructor_name}", constructors.contructorDetailsPageHandler)
+	http.HandleFunc("/{constructor_name}", cwa.contructorDetailsPageHandler)
 
 	http.ListenAndServe(":8080", nil)
 
@@ -43,12 +70,27 @@ func (constructors Constructors) handler(w http.ResponseWriter, r *http.Request)
 
 }
 
-func (constructors Constructors) contructorDetailsPageHandler(w http.ResponseWriter, r *http.Request) {
+func (cwa ConstructorDetailsWrapperArray) contructorDetailsPageHandler(w http.ResponseWriter, r *http.Request) {
 
 	path := path.Base(r.URL.Path)
 
-	fmt.Fprintln(w, path)
+	c := cwa.findConstructor(path)
 
+	fmt.Println(c)
+
+	fmt.Fprintln(w, c)
+
+}
+
+func (cwa ConstructorDetailsWrapperArray) findConstructor(constructor_name string) ConstructorDetailsWrapper {
+
+	for _, c := range cwa {
+		if c.TeamName == constructor_name {
+			return c
+		}
+	}
+
+	return ConstructorDetailsWrapper{}
 }
 
 func parseFile(contructors *Constructors) error {
@@ -62,6 +104,23 @@ func parseFile(contructors *Constructors) error {
 	if err != nil {
 		return err
 	}
+
+	return nil
+}
+
+func parseFile2(cwa *ConstructorDetailsWrapperArray) error {
+
+	f, err := os.Open("f1_constructors_details.json")
+	if err != nil {
+		return err
+	}
+
+	err = json.NewDecoder(f).Decode(cwa)
+	if err != nil {
+		return err
+	}
+
+	fmt.Println(cwa)
 
 	return nil
 }
