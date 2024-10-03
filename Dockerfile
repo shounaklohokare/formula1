@@ -4,12 +4,12 @@ WORKDIR /app
 
 COPY go.* ./
 
-RUN go mod download
+RUN go mod tidy
 
 COPY . .
 
-RUN go build -o main main.go
+RUN go build -o app
 
 EXPOSE 8080
 
-CMD ["./main"]
+CMD ["./app"]
