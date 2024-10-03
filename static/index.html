@@ -18,6 +18,10 @@
     .bg-custom-red {
         background-color: #FF4D4D;
     }
+
+    body {
+        background-color: #ECF2F5;
+    }
 </style>
 </head>
 
@@ -42,7 +46,7 @@
                 <tbody class="text-center divide-y divide-gray-400 font-semibold">
                     {{range $_, $contructor := .}}
                     <tr class="mx-16 p-2">
-                        <td class="mx-12 p-4"><a href="/{{$contructor.Name}}">{{$contructor.Name}}</a></td>
+                        <td class="mx-12 p-4 text-left"><a href="/{{$contructor.Name}}">{{$contructor.Name}}</a></td>
                         <td class="mx-12 p-4"><a href="/{{$contructor.Name}}">{{$contructor.Base}}</a></td>
                     </tr>
                     {{end}}

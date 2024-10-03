@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        *::after,
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg-custom-red {
+            background-color: #FF4D4D;
+        }
+
+        body {
+            background-color: #ECF2F5;
+        }
+    </style>
+</head>
+<title>{{.TeamName}}</title>
+
+<body>
+    <div class="flex justify-center items-center absolute top-0 w-full h-24 bg-custom-red">
+        <div class="text-6xl text-gray-900 font-mono"><a href="/">Formula 1</a></div>
+    </div>
+    <div class="mt-32 flex justify-center items-center flex-col">
+        <h1 class="text-4xl font-semibold">
+            {{.TeamName}}
+        </h1>
+    </div>
+    <div class="flex flex-col justify-center mt-16 items-center">
+        <h1 class="text-2xl font-semibold">Drivers</h1>
+        <div class="flex space-x-12 text-xl mt-4">
+            {{range $_, $driver := .ConstructorDetails.Drivers}}
+            <div class="flex space-x-4 italic">
+                <span>{{$driver.Number}}</span><span>{{$driver.Name}}</span>
+            </div>
+            {{end}}
+        </div>
+    </div>
+    <div class="flex justify-center align-center">
+        <div class="pt-24 mx-64 text-xl flex flex-col space-y-8 ">
+            <div class="flex space-x-6"><span class="font-semibold">Base</span><span>{{.ConstructorDetails.Base}}</span>
+            </div>
+            <div class="flex space-x-6"><span class="font-semibold">Team
+                    Chief</span><span>{{.ConstructorDetails.TeamPrincipal}}</span></div>
+            <div class="flex space-x-6"><span class="font-semibold">Technical Chief</span><span>
+                    {{.ConstructorDetails.TechnicalChief}}</span></div>
+        </div>
+        <div class="pt-24 text-xl flex flex-col space-y-8 ">
+            <div class="flex space-x-6"><span
+                    class="font-semibold">Chasis</span><span>{{.ConstructorDetails.Chasis}}</span>
+            </div>
+            <div class="flex space-x-6"><span class="font-semibold">Power
+                    Unit</span><span>{{.ConstructorDetails.EngineSupplier}}</span></div>
+            <div class="flex space-x-6"><span class="font-semibold">World
+                    Championships</span><span>{{.ConstructorDetails.WorldChampionships}}</span></div>
+        </div>
+        <div class="pt-24 text-xl flex flex-col space-y-8  mx-64 ">
+            <div class="flex space-x-6"><span class="font-semibold">Pole
+                    Positions</span><span>{{.ConstructorDetails.PolePositions}}</span></div>
+            <div class="flex space-x-6"><span class="font-semibold">Fastest
+                    Laps</span><span>{{.ConstructorDetails.FastestLaps}}</span></div>
+            <div class="flex space-x-6"><span class="font-semibold">First Team
+                    Entry</span><span>{{.ConstructorDetails.FirstTeamEntry}}</span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

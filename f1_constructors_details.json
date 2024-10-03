@@ -5,12 +5,13 @@
             "base": "Milton Keynes, United Kingdom",
             "team_principal": "Christian Horner",
             "technical_chief": "Pierre Waché",
-            "chasis": "W15",
+            "chasis": "RB20",
             "engine_supplier": "Honda",
             "world_championships": "6",
             "wins": "120",
             "pole_positions": "105",
             "fastest_laps": "98",
+            "first_team_entry": "1997",
             "drivers": [
                 {
                     "name": "Max Verstrappen",
@@ -29,12 +30,13 @@
             "base": "Brackley, United Kingdom",
             "team_principal": "Toto Wolff",
             "technical_chief": "James Allison",
-            "chasis": "RB20",
+            "chasis": "W15",
             "engine_supplier": "Mercedes",
             "world_championships": "8",
             "wins": "119",
             "pole_positions": "131",
             "fastest_laps": "100",
+            "first_team_entry": "1970",
             "drivers": [
                 {
                     "name": "Lewis Hamilton",
@@ -59,6 +61,7 @@
             "wins": "247",
             "pole_positions": "252",
             "fastest_laps": "262",
+            "first_team_entry": "1950",
             "drivers": [
                 {
                     "name": "Charles Leclerc",
@@ -76,13 +79,14 @@
         "details": {
             "base": "Woking, United Kingdom",
             "team_principal": "Andrea Stella",
-            "technical_chief": "Peter Prodromou / Neil Houldey",
+            "technical_chief": "Peter Prodromou",
             "chasis": "MCL38",
             "engine_supplier": "Mercedes",
             "world_championships": "8",
             "wins": "188",
             "pole_positions": "162",
             "fastest_laps": "170",
+            "first_team_entry": "1966",
             "drivers": [
                 {
                     "name": "Lando Norris",
@@ -107,6 +111,7 @@
             "wins": "1",
             "pole_positions": "1",
             "fastest_laps": "3",
+            "first_team_entry": "2018",
             "drivers": [
                 {
                     "name": "Fernando Alonso",
@@ -131,6 +136,7 @@
             "wins": "21",
             "pole_positions": "20",
             "fastest_laps": "15",
+            "first_team_entry": "1970",
             "drivers": [
                 {
                     "name": "Esteban Ocon",
@@ -155,6 +161,7 @@
             "wins": "21",
             "pole_positions": "20",
             "fastest_laps": "15",
+            "first_team_entry": "1970",
             "drivers": [
                 {
                     "name": "Esteban Ocon",
@@ -179,6 +186,7 @@
             "wins": "21",
             "pole_positions": "20",
             "fastest_laps": "15",
+            "first_team_entry": "1986",
             "drivers": [
                 {
                     "name": "Esteban Ocon",
@@ -203,6 +211,7 @@
             "wins": "114",
             "pole_positions": "128",
             "fastest_laps": "133",
+            "first_team_entry": "1978",
             "drivers": [
                 {
                     "name": "Alex Albon",
@@ -227,6 +236,7 @@
             "wins": "1",
             "pole_positions": "1",
             "fastest_laps": "7",
+            "first_team_entry": "1993",
             "drivers": [
                 {
                     "name": "Valterri Bottas",
@@ -251,6 +261,7 @@
             "wins": "1",
             "pole_positions": "1",
             "fastest_laps": "7",
+            "first_team_entry": "1970",
             "drivers": [
                 {
                     "name": "Valterri Bottas",
@@ -275,6 +286,7 @@
             "wins": "0",
             "pole_positions": "1",
             "fastest_laps": "2",
+            "first_team_entry": "2016",
             "drivers": [
                 {
                     "name": "Kevin Magnussen",
@@ -299,6 +311,7 @@
             "wins": "2",
             "pole_positions": 1,
             "fastest_laps": "4",
+            "first_team_entry": "1985",
             "drivers": [
                 {
                     "name": "Daniel Ricciardo",

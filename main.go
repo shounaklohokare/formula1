@@ -24,6 +24,7 @@ type ConstructorDetails struct {
 	Wins               string `json:"wins"`
 	PolePositions      string `json:"pole_positions"`
 	FastestLaps        string `json:"fastest_laps"`
+	FirstTeamEntry     string `json:"first_team_entry"`
 	Drivers            []struct {
 		Name   string `json:"name"`
 		Number string `json:"number"`
@@ -76,9 +77,9 @@ func (cwa ConstructorDetailsWrapperArray) contructorDetailsPageHandler(w http.Re
 
 	c := cwa.findConstructor(path)
 
-	fmt.Println(c)
+	tmpl := template.Must(template.ParseFiles("static/constructor_details.html"))
 
-	fmt.Fprintln(w, c)
+	tmpl.Execute(w, c)
 
 }
 
