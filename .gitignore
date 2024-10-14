@@ -1,0 +1,2 @@
+# adding the key pair used to SSH into EC2 instance
+*.pem #
